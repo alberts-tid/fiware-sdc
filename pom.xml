@@ -242,20 +242,22 @@
                         </ignores>
                         <excludes>
                             <exclude>**/*Test*.class</exclude>
-                            <exclude>**/model/**.class</exclude>
+                            <exclude>**/*model/**/*</exclude>
                             <exclude>org/openstack/**/*</exclude>
                             <exclude>org/w3/**/*</exclude>
+                            <exclude>**/*exception/**/*</exclude>
+                            <exclude>**/*bootstrap/**/*</exclude>
                         </excludes>
                     </instrumentation>
                 </configuration>
-
             </plugin>
             <plugin>
                 <groupId>org.eluder.coveralls</groupId>
                 <artifactId>coveralls-maven-plugin</artifactId>
                 <version>2.2.0</version>
                 <configuration>
-                    <repoToken>tdMAvhh2nElpplTf7IcAFFcApBhdEFggZ</repoToken>
+                    <!--<repoToken>tdMAvhh2nElpplTf7IcAFFcApBhdEFggZ</repoToken>-->
+                    <repoToken>ALacwMIO5hf4Wh5mjcv14YslGyZfPrL5X</repoToken>
                     <sourceEncoding>UTF-8</sourceEncoding>
                 </configuration>
             </plugin>
