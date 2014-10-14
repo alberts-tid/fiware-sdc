@@ -225,16 +225,16 @@
 				</executions>
 			</plugin>
 
-			<plugin>
+			<!--plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>${cobertura-maven-plugin.version}</version>
 				<configuration>
 					<format>xml</format>
 					<format>html</format>
-					<maxmem>256m</maxmem>
+					<maxmem>256m</maxmem-->
 					<!-- aggregated reports for multi-module projects -->
-					<aggregate>true</aggregate>
+					<!--aggregate>true</aggregate>
 					<instrumentation>
 						<excludes>
 							<exclude>com/telefonica/**/exception/**/*</exclude>
@@ -246,7 +246,7 @@
 						</excludes>
 					</instrumentation>
 				</configuration>
-			</plugin>
+			</plugin-->
 			<plugin>
 				<groupId>org.eluder.coveralls</groupId>
 				<artifactId>coveralls-maven-plugin</artifactId>
