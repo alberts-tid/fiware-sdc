@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.telefonica.euro_iaas</groupId>
-    <artifactId>sdc-server</artifactId>
-    <packaging>pom</packaging>
-    <name>sdc-server</name>
-    <version>2.2.0-SNAPSHOT</version>
+	<groupId>com.telefonica.euro_iaas</groupId>
+	<artifactId>sdc-server</artifactId>
+	<packaging>pom</packaging>
+	<name>sdc-server</name>
+	<version>2.2.0-SNAPSHOT</version>
 
 
-    <properties>
+	<properties>
 
-        <!-- TDigital PROPERTIES -->
-        <!-- This properties will be added to sonar as manual measures -->
-        <product.area.name>Industrial IoT</product.area.name>
-        <product.name>FIWARE</product.name>
-        <product.release>3.4.3</product.release>
+		<!-- TDigital PROPERTIES -->
+		<!-- This properties will be added to sonar as manual measures -->
+		<product.area.name>Industrial IoT</product.area.name>
+		<product.name>FIWARE</product.name>
+		<product.release>3.4.3</product.release>
 
-        <assembly-directory>target/distribution</assembly-directory>
+		<assembly-directory>target/distribution</assembly-directory>
 
         <repoName>fiware-sdc</repoName>
 
@@ -95,11 +95,6 @@
         <ehcache.version>2.7.4</ehcache.version>
         
         <!-- sonar -->
-        <sonar.host.url>http://ci-fiware-01.hi.inet/sonar</sonar.host.url>
-        <sonar.jdbc.url>jdbc:mysql://localhost:3306/sonar</sonar.jdbc.url>
-        <sonar.jdbc.driver>com.mysql.jdbc.Driver</sonar.jdbc.driver>
-        <sonar.jdbc.username>sonar</sonar.jdbc.username>
-        <sonar.jdbc.password>sonar</sonar.jdbc.password>
         <!-- exclusions must be synchronized with cobertura-maven-plugin exclusions -->
         <sonar.exclusions>com/telefonica/**/exception/**/*,com/telefonica/**/bootstrap/*,
             com/telefonica/**/model/**/*, org/w3/**/*, org/openstack/**/*,com/telefonica/**/aspects/**/*</sonar.exclusions>
@@ -630,4 +625,5 @@
         <module>client</module>
         <module>migrations</module>
     </modules>
+
 </project>
